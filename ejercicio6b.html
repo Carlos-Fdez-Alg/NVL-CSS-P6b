@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Práctica CSS: selectores combinados</title>
+    <style>
+      div>p {
+        border: 2px solid #fabada;
+      }
+      .importante+p{
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Vamos a comprobar como funcionan la combinación de selectores</h1>
+    <div>
+      <p class="importante">Párrafo 1 div 1</p>
+      <p>Párrafo 2 div 1</p>
+      <p>Párrafo 3 div 1</p>
+    </div>
+    <p>Párrafo fuera de div</p>
+    <div>
+      <p class="importante">Párrafo 1 div 2</p>
+      <p>Párrafo 2 div 2</p>
+      <p>Párrafo 3 div 2</p>
+    </div>
+    <p>Párrafo fuera de div</p>
+    <div>
+      <p class="importante">Párrafo 1 div 3</p>
+      <p>Párrafo 2 div 3</p>
+      <p>Párrafo 3 div 3</p>
+    </div>
+  </body>
+</html>
